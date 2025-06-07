@@ -1,0 +1,43 @@
+{
+  "title": "Lead Quality Gap Implementation",
+  "finding": {
+    "videoUrl": "https://thrivestack.io/tutorials/finding-lead-quality-gap",
+    "metrics": [
+      "50% poor quality leads",
+      "Acquisition performance indicators",
+      "Implementation success rate",
+      "ROI measurement"
+    ],
+    "dashboardSetup": [
+      "Navigate to Acquisition > Analytics",
+      "Set up metric tracking",
+      "Configure alert thresholds",
+      "Enable automated reporting"
+    ]
+  },
+  "fixing": {
+    "videoUrl": "https://thrivestack.io/tutorials/fixing-lead-quality-gap",
+    "steps": [
+      "Implement lead scoring; align content and campaigns with ICP."
+    ],
+    "automation": {
+      "code": "export const lead-quality-gapAlert = {\n  trigger: 'lead-quality-gap_detected',\n  threshold: 0.9,\n  actions: [\n    'analyze_impact',\n    'notify_demand_gen',\n    'generate_fix_report'\n  ]\n};",
+      "explanation": "This automation monitors lead quality gap metrics and triggers appropriate actions when thresholds are exceeded."
+    }
+  },
+  "preventing": {
+    "videoUrl": "https://thrivestack.io/tutorials/preventing-lead-quality-gap",
+    "strategy": [
+      "Implement continuous monitoring",
+      "Set up early warning system",
+      "Configure automated responses",
+      "Enable trend analysis"
+    ],
+    "bestPractices": [
+      "Regular audits",
+      "Performance tracking",
+      "Automated intervention",
+      "Weekly reviews"
+    ]
+  }
+}

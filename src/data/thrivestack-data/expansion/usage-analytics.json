@@ -1,0 +1,43 @@
+{
+  "title": "Usage Analytics Implementation",
+  "finding": {
+    "videoUrl": "https://thrivestack.io/tutorials/finding-usage-analytics",
+    "metrics": [
+      "35% usage insights",
+      "Expansion performance indicators",
+      "Implementation success rate",
+      "ROI measurement"
+    ],
+    "dashboardSetup": [
+      "Navigate to Expansion > Analytics",
+      "Set up metric tracking",
+      "Configure alert thresholds",
+      "Enable automated reporting"
+    ]
+  },
+  "fixing": {
+    "videoUrl": "https://thrivestack.io/tutorials/fixing-usage-analytics",
+    "steps": [
+      "Implement usage analytics; identify opportunities."
+    ],
+    "automation": {
+      "code": "export const usage-analyticsAlert = {\n  trigger: 'usage-analytics_detected',\n  threshold: 0.6,\n  actions: [\n    'analyze_impact',\n    'notify_analytics',\n    'generate_fix_report'\n  ]\n};",
+      "explanation": "This automation monitors usage analytics metrics and triggers appropriate actions when thresholds are exceeded."
+    }
+  },
+  "preventing": {
+    "videoUrl": "https://thrivestack.io/tutorials/preventing-usage-analytics",
+    "strategy": [
+      "Implement continuous monitoring",
+      "Set up early warning system",
+      "Configure automated responses",
+      "Enable trend analysis"
+    ],
+    "bestPractices": [
+      "Regular audits",
+      "Performance tracking",
+      "Automated intervention",
+      "Weekly reviews"
+    ]
+  }
+}

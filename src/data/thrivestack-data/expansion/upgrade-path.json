@@ -1,0 +1,43 @@
+{
+  "title": "Upgrade Path Implementation",
+  "finding": {
+    "videoUrl": "https://thrivestack.io/tutorials/finding-upgrade-path",
+    "metrics": [
+      "45% upgrade friction",
+      "Expansion performance indicators",
+      "Implementation success rate",
+      "ROI measurement"
+    ],
+    "dashboardSetup": [
+      "Navigate to Expansion > Analytics",
+      "Set up metric tracking",
+      "Configure alert thresholds",
+      "Enable automated reporting"
+    ]
+  },
+  "fixing": {
+    "videoUrl": "https://thrivestack.io/tutorials/fixing-upgrade-path",
+    "steps": [
+      "Optimize upgrade flows; implement upgrade triggers."
+    ],
+    "automation": {
+      "code": "export const upgrade-pathAlert = {\n  trigger: 'upgrade-path_detected',\n  threshold: 0.8,\n  actions: [\n    'analyze_impact',\n    'notify_product_growth',\n    'generate_fix_report'\n  ]\n};",
+      "explanation": "This automation monitors upgrade path metrics and triggers appropriate actions when thresholds are exceeded."
+    }
+  },
+  "preventing": {
+    "videoUrl": "https://thrivestack.io/tutorials/preventing-upgrade-path",
+    "strategy": [
+      "Implement continuous monitoring",
+      "Set up early warning system",
+      "Configure automated responses",
+      "Enable trend analysis"
+    ],
+    "bestPractices": [
+      "Regular audits",
+      "Performance tracking",
+      "Automated intervention",
+      "Weekly reviews"
+    ]
+  }
+}

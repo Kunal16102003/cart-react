@@ -1,0 +1,43 @@
+{
+  "title": "Brand Voice Inconsistency Implementation",
+  "finding": {
+    "videoUrl": "https://thrivestack.io/tutorials/finding-brand-voice-inconsistency",
+    "metrics": [
+      "35% brand inconsistency",
+      "Awareness performance indicators",
+      "Implementation success rate",
+      "ROI measurement"
+    ],
+    "dashboardSetup": [
+      "Navigate to Awareness > Analytics",
+      "Set up metric tracking",
+      "Configure alert thresholds",
+      "Enable automated reporting"
+    ]
+  },
+  "fixing": {
+    "videoUrl": "https://thrivestack.io/tutorials/fixing-brand-voice-inconsistency",
+    "steps": [
+      "Create comprehensive brand guidelines; implement regular brand audit process."
+    ],
+    "automation": {
+      "code": "export const brand-voice-inconsistencyAlert = {\n  trigger: 'brand-voice-inconsistency_detected',\n  threshold: 0.6,\n  actions: [\n    'analyze_impact',\n    'notify_marketing',\n    'generate_fix_report'\n  ]\n};",
+      "explanation": "This automation monitors brand voice inconsistency metrics and triggers appropriate actions when thresholds are exceeded."
+    }
+  },
+  "preventing": {
+    "videoUrl": "https://thrivestack.io/tutorials/preventing-brand-voice-inconsistency",
+    "strategy": [
+      "Implement continuous monitoring",
+      "Set up early warning system",
+      "Configure automated responses",
+      "Enable trend analysis"
+    ],
+    "bestPractices": [
+      "Regular audits",
+      "Performance tracking",
+      "Automated intervention",
+      "Weekly reviews"
+    ]
+  }
+}
