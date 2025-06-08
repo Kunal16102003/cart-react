@@ -1,0 +1,43 @@
+{
+  "title": "Community Engagement Implementation",
+  "finding": {
+    "videoUrl": "https://thrivestack.io/tutorials/finding-community-engagement-retention",
+    "metrics": [
+      "20% community participation",
+      "Retention performance indicators",
+      "Implementation success rate",
+      "ROI measurement"
+    ],
+    "dashboardSetup": [
+      "Navigate to Retention > Analytics",
+      "Set up metric tracking",
+      "Configure alert thresholds",
+      "Enable automated reporting"
+    ]
+  },
+  "fixing": {
+    "videoUrl": "https://thrivestack.io/tutorials/fixing-community-engagement-retention",
+    "steps": [
+      "Improve community program; create engagement initiatives."
+    ],
+    "automation": {
+      "code": "export const community-engagement-retentionAlert = {\n  trigger: 'community-engagement-retention_detected',\n  threshold: 0.4,\n  actions: [\n    'analyze_impact',\n    'notify_community_manager',\n    'generate_fix_report'\n  ]\n};",
+      "explanation": "This automation monitors community engagement metrics and triggers appropriate actions when thresholds are exceeded."
+    }
+  },
+  "preventing": {
+    "videoUrl": "https://thrivestack.io/tutorials/preventing-community-engagement-retention",
+    "strategy": [
+      "Implement continuous monitoring",
+      "Set up early warning system",
+      "Configure automated responses",
+      "Enable trend analysis"
+    ],
+    "bestPractices": [
+      "Regular audits",
+      "Performance tracking",
+      "Automated intervention",
+      "Weekly reviews"
+    ]
+  }
+}

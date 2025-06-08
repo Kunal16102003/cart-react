@@ -1,0 +1,5 @@
+# Netlify redirects for SPA routing
+/*    /index.html   200
+
+# Serve the web component library directly from dist root
+/growth-leaks-library.js    /growth-leaks-library.js    200

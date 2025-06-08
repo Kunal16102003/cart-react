@@ -1,0 +1,43 @@
+{
+  "title": "Mobile Experience Gap Implementation",
+  "finding": {
+    "videoUrl": "https://thrivestack.io/tutorials/finding-mobile-experience-gap",
+    "metrics": [
+      "45% mobile bounce rate",
+      "Awareness performance indicators",
+      "Implementation success rate",
+      "ROI measurement"
+    ],
+    "dashboardSetup": [
+      "Navigate to Awareness > Analytics",
+      "Set up metric tracking",
+      "Configure alert thresholds",
+      "Enable automated reporting"
+    ]
+  },
+  "fixing": {
+    "videoUrl": "https://thrivestack.io/tutorials/fixing-mobile-experience-gap",
+    "steps": [
+      "Conduct mobile-first audit; optimize for mobile speed and usability."
+    ],
+    "automation": {
+      "code": "export const mobile-experience-gapAlert = {\n  trigger: 'mobile-experience-gap_detected',\n  threshold: 0.8,\n  actions: [\n    'analyze_impact',\n    'notify_ux_lead',\n    'generate_fix_report'\n  ]\n};",
+      "explanation": "This automation monitors mobile experience gap metrics and triggers appropriate actions when thresholds are exceeded."
+    }
+  },
+  "preventing": {
+    "videoUrl": "https://thrivestack.io/tutorials/preventing-mobile-experience-gap",
+    "strategy": [
+      "Implement continuous monitoring",
+      "Set up early warning system",
+      "Configure automated responses",
+      "Enable trend analysis"
+    ],
+    "bestPractices": [
+      "Regular audits",
+      "Performance tracking",
+      "Automated intervention",
+      "Weekly reviews"
+    ]
+  }
+}

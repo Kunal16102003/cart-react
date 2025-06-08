@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Growth Leaks Library - Complete Example</title>
+  
+  <!-- Include Tailwind CSS for proper styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    /* Custom styles to enhance the design */
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+    }
+    
+    .main-container {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+    
+    .header-section {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    
+    .example-section {
+      margin: 30px 20px;
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s ease;
+    }
+    
+    .example-section:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      transform: translateY(-2px);
+    }
+    
+    .example-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #1f2937;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .example-description {
+      color: #6b7280;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    
+    .code-block {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+      font-size: 13px;
+      margin-bottom: 25px;
+      overflow-x: auto;
+      color: #475569;
+      position: relative;
+    }
+    
+    .code-block::before {
+      content: 'HTML';
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 10px;
+      color: #94a3b8;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .status-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    
+    .status-loading {
+      background: #fef3c7;
+      color: #92400e;
+      border: 1px solid #fbbf24;
+    }
+    
+    .status-success {
+      background: #d1fae5;
+      color: #065f46;
+      border: 1px solid #10b981;
+    }
+    
+    .status-error {
+      background: #fee2e2;
+      color: #991b1b;
+      border: 1px solid #ef4444;
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    
+    /* Animation for loading */
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .loading-spinner {
+      animation: spin 1s linear infinite;
+    }
+    
+    /* Enhance the growth leaks styling */
+    growth-leaks-library {
+      display: block;
+      margin-top: 20px;
+    }
+    
+    /* Add some responsive design */
+    @media (max-width: 768px) {
+      .main-container {
+        margin: 10px;
+        border-radius: 16px;
+      }
+      
+      .header-section {
+        padding: 30px 15px;
+      }
+      
+      .example-section {
+        margin: 20px 15px;
+        padding: 20px;
+      }
+      
+      .example-title {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+  
+  <!-- Google Fonts for better typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="header-section">
+      <h1 class="text-4xl font-bold mb-4">🚀 Growth Leaks Library</h1>
+      <p class="text-xl opacity-90 max-w-2xl mx-auto">
+        Comprehensive web component for analyzing and fixing growth bottlenecks across your entire customer journey
+      </p>
+      <div id="status" class="status-indicator status-loading mx-auto mt-6">
+        <span class="loading-spinner">🔄</span>
+        Loading web component library...
+      </div>
+    </div>
+
+    <div class="example-section">
+      <div class="example-title">
+        📊 <span>Complete Growth Analysis</span>
+      </div>
+      <div class="example-description">
+        Display all available growth leaks across all customer journey stages with comprehensive analysis and actionable solutions.
+      </div>
+      <div class="code-block">&lt;growth-leaks-library&gt;&lt;/growth-leaks-library&gt;</div>
+      <growth-leaks-library></growth-leaks-library>
+    </div>
+
+    <div class="example-section">
+      <div class="example-title">
+        🎯 <span>Awareness Stage Focus</span>
+      </div>
+      <div class="example-description">
+        Filter to show only Awareness stage growth leaks - perfect for top-of-funnel optimization and brand visibility improvements.
+      </div>
+      <div class="code-block">&lt;growth-leaks-library customer-stage="Awareness"&gt;&lt;/growth-leaks-library&gt;</div>
+      <growth-leaks-library customer-stage="Awareness"></growth-leaks-library>
+    </div>
+
+    <div class="example-section">
+      <div class="example-title">
+        🔄 <span>Acquisition Stage Focus</span>
+      </div>
+      <div class="example-description">
+        Filter to show only Acquisition stage growth leaks - ideal for conversion optimization and lead generation improvements.
+      </div>
+      <div class="code-block">&lt;growth-leaks-library customer-stage="Acquisition"&gt;&lt;/growth-leaks-library&gt;</div>
+      <growth-leaks-library customer-stage="Acquisition"></growth-leaks-library>
+    </div>
+
+    <div class="example-section">
+      <div class="example-title">
+        🚀 <span>Activation Stage Focus</span>
+      </div>
+      <div class="example-description">
+        Filter to show only Activation stage growth leaks - essential for improving user onboarding and time-to-value.
+      </div>
+      <div class="code-block">&lt;growth-leaks-library customer-stage="Activation"&gt;&lt;/growth-leaks-library&gt;</div>
+      <growth-leaks-library customer-stage="Activation"></growth-leaks-library>
+    </div>
+
+    <div class="example-section">
+      <div class="example-title">
+        📈 <span>Overview Mode</span>
+      </div>
+      <div class="example-description">
+        Show just the high-level overview without detailed leak information - perfect for executive dashboards and quick insights.
+      </div>
+      <div class="code-block">&lt;growth-leaks-library show-leaks="false"&gt;&lt;/growth-leaks-library&gt;</div>
+      <growth-leaks-library show-leaks="false"></growth-leaks-library>
+    </div>
+
+    <div class="example-section">
+      <div class="example-title">
+        💰 <span>Monetization Stage Focus</span>
+      </div>
+      <div class="example-description">
+        Filter to show only Monetization stage growth leaks - crucial for improving trial-to-paid conversion and revenue optimization.
+      </div>
+      <div class="code-block">&lt;growth-leaks-library customer-stage="Monetization"&gt;&lt;/growth-leaks-library&gt;</div>
+      <growth-leaks-library customer-stage="Monetization"></growth-leaks-library>
+    </div>
+
+    <div class="example-section">
+      <div class="example-title">
+        🔒 <span>Retention Stage Focus</span>
+      </div>
+      <div class="example-description">
+        Filter to show only Retention stage growth leaks - vital for reducing churn and improving customer lifetime value.
+      </div>
+      <div class="code-block">&lt;growth-leaks-library customer-stage="Retention"&gt;&lt;/growth-leaks-library&gt;</div>
+      <growth-leaks-library customer-stage="Retention"></growth-leaks-library>
+    </div>
+
+    <div class="example-section">
+      <div class="example-title">
+        📊 <span>Expansion Stage Focus</span>
+      </div>
+      <div class="example-description">
+        Filter to show only Expansion stage growth leaks - key for growing revenue from existing customers through upsells and cross-sells.
+      </div>
+      <div class="code-block">&lt;growth-leaks-library customer-stage="Expansion"&gt;&lt;/growth-leaks-library&gt;</div>
+      <growth-leaks-library customer-stage="Expansion"></growth-leaks-library>
+    </div>
+  </div>
+
+  <!-- Load the web component with proper error handling -->
+  <script type="module">
+    const statusEl = document.getElementById('status');
+    
+    try {
+      // Load the web component from Netlify
+      await import('https://phenomenal-mochi-fe9262.netlify.app/growth-leaks-library.js');
+      
+      statusEl.className = 'status-indicator status-success mx-auto mt-6';
+      statusEl.innerHTML = '<span>✅</span> Web component loaded successfully!';
+      
+      // Hide status after 3 seconds
+      setTimeout(() => {
+        statusEl.style.opacity = '0';
+        statusEl.style.transition = 'opacity 0.5s ease';
+        setTimeout(() => statusEl.style.display = 'none', 500);
+      }, 3000);
+      
+    } catch (error) {
+      console.error('Failed to load web component:', error);
+      statusEl.className = 'status-indicator status-error mx-auto mt-6';
+      statusEl.innerHTML = '<span>❌</span> Failed to load web component. Check console for details.';
+    }
+  </script>
+</body>
+</html>

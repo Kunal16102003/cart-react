@@ -1,0 +1,43 @@
+{
+  "title": "User Engagement Implementation",
+  "finding": {
+    "videoUrl": "https://thrivestack.io/tutorials/finding-user-engagement-retention",
+    "metrics": [
+      "45% engagement drop",
+      "Retention performance indicators",
+      "Implementation success rate",
+      "ROI measurement"
+    ],
+    "dashboardSetup": [
+      "Navigate to Retention > Analytics",
+      "Set up metric tracking",
+      "Configure alert thresholds",
+      "Enable automated reporting"
+    ]
+  },
+  "fixing": {
+    "videoUrl": "https://thrivestack.io/tutorials/fixing-user-engagement-retention",
+    "steps": [
+      "Create engagement program; implement activity tracking."
+    ],
+    "automation": {
+      "code": "export const user-engagement-retentionAlert = {\n  trigger: 'user-engagement-retention_detected',\n  threshold: 0.8,\n  actions: [\n    'analyze_impact',\n    'notify_product_growth',\n    'generate_fix_report'\n  ]\n};",
+      "explanation": "This automation monitors user engagement metrics and triggers appropriate actions when thresholds are exceeded."
+    }
+  },
+  "preventing": {
+    "videoUrl": "https://thrivestack.io/tutorials/preventing-user-engagement-retention",
+    "strategy": [
+      "Implement continuous monitoring",
+      "Set up early warning system",
+      "Configure automated responses",
+      "Enable trend analysis"
+    ],
+    "bestPractices": [
+      "Regular audits",
+      "Performance tracking",
+      "Automated intervention",
+      "Weekly reviews"
+    ]
+  }
+}
