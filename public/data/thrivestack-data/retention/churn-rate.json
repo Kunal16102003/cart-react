@@ -1,0 +1,43 @@
+{
+  "title": "Churn Rate Implementation",
+  "finding": {
+    "videoUrl": "https://thrivestack.io/tutorials/finding-churn-rate",
+    "metrics": [
+      "15% monthly churn",
+      "Retention performance indicators",
+      "Implementation success rate",
+      "ROI measurement"
+    ],
+    "dashboardSetup": [
+      "Navigate to Retention > Analytics",
+      "Set up metric tracking",
+      "Configure alert thresholds",
+      "Enable automated reporting"
+    ]
+  },
+  "fixing": {
+    "videoUrl": "https://thrivestack.io/tutorials/fixing-churn-rate",
+    "steps": [
+      "Implement comprehensive churn prevention program."
+    ],
+    "automation": {
+      "code": "export const churn-rateAlert = {\n  trigger: 'churn-rate_detected',\n  threshold: 1.0,\n  actions: [\n    'analyze_impact',\n    'notify_head_of_growth',\n    'generate_fix_report'\n  ]\n};",
+      "explanation": "This automation monitors churn rate metrics and triggers appropriate actions when thresholds are exceeded."
+    }
+  },
+  "preventing": {
+    "videoUrl": "https://thrivestack.io/tutorials/preventing-churn-rate",
+    "strategy": [
+      "Implement continuous monitoring",
+      "Set up early warning system",
+      "Configure automated responses",
+      "Enable trend analysis"
+    ],
+    "bestPractices": [
+      "Regular audits",
+      "Performance tracking",
+      "Automated intervention",
+      "Weekly reviews"
+    ]
+  }
+}

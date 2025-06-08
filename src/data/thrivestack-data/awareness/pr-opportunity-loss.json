@@ -1,0 +1,43 @@
+{
+  "title": "PR Opportunity Loss Implementation",
+  "finding": {
+    "videoUrl": "https://thrivestack.io/tutorials/finding-pr-opportunity-loss",
+    "metrics": [
+      "25% PR coverage rate",
+      "Awareness performance indicators",
+      "Implementation success rate",
+      "ROI measurement"
+    ],
+    "dashboardSetup": [
+      "Navigate to Awareness > Analytics",
+      "Set up metric tracking",
+      "Configure alert thresholds",
+      "Enable automated reporting"
+    ]
+  },
+  "fixing": {
+    "videoUrl": "https://thrivestack.io/tutorials/fixing-pr-opportunity-loss",
+    "steps": [
+      "Build media relationships; create newsworthy content and company milestones."
+    ],
+    "automation": {
+      "code": "export const pr-opportunity-lossAlert = {\n  trigger: 'pr-opportunity-loss_detected',\n  threshold: 0.4,\n  actions: [\n    'analyze_impact',\n    'notify_marketing',\n    'generate_fix_report'\n  ]\n};",
+      "explanation": "This automation monitors pr opportunity loss metrics and triggers appropriate actions when thresholds are exceeded."
+    }
+  },
+  "preventing": {
+    "videoUrl": "https://thrivestack.io/tutorials/preventing-pr-opportunity-loss",
+    "strategy": [
+      "Implement continuous monitoring",
+      "Set up early warning system",
+      "Configure automated responses",
+      "Enable trend analysis"
+    ],
+    "bestPractices": [
+      "Regular audits",
+      "Performance tracking",
+      "Automated intervention",
+      "Weekly reviews"
+    ]
+  }
+}

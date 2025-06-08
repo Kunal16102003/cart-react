@@ -1,0 +1,43 @@
+{
+  "title": "Social Proof Deficit Implementation",
+  "finding": {
+    "videoUrl": "https://thrivestack.io/tutorials/finding-social-proof-deficit",
+    "metrics": [
+      "40% lower trust signals",
+      "Awareness performance indicators",
+      "Implementation success rate",
+      "ROI measurement"
+    ],
+    "dashboardSetup": [
+      "Navigate to Awareness > Analytics",
+      "Set up metric tracking",
+      "Configure alert thresholds",
+      "Enable automated reporting"
+    ]
+  },
+  "fixing": {
+    "videoUrl": "https://thrivestack.io/tutorials/fixing-social-proof-deficit",
+    "steps": [
+      "Systematically collect and showcase customer testimonials, case studies, and industry recognition."
+    ],
+    "automation": {
+      "code": "export const social-proof-deficitAlert = {\n  trigger: 'social-proof-deficit_detected',\n  threshold: 0.7,\n  actions: [\n    'analyze_impact',\n    'notify_marketing',\n    'generate_fix_report'\n  ]\n};",
+      "explanation": "This automation monitors social proof deficit metrics and triggers appropriate actions when thresholds are exceeded."
+    }
+  },
+  "preventing": {
+    "videoUrl": "https://thrivestack.io/tutorials/preventing-social-proof-deficit",
+    "strategy": [
+      "Implement continuous monitoring",
+      "Set up early warning system",
+      "Configure automated responses",
+      "Enable trend analysis"
+    ],
+    "bestPractices": [
+      "Regular audits",
+      "Performance tracking",
+      "Automated intervention",
+      "Weekly reviews"
+    ]
+  }
+}

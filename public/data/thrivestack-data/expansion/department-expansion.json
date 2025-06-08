@@ -1,0 +1,43 @@
+{
+  "title": "Department Expansion Implementation",
+  "finding": {
+    "videoUrl": "https://thrivestack.io/tutorials/finding-department-expansion",
+    "metrics": [
+      "30% dept coverage",
+      "Expansion performance indicators",
+      "Implementation success rate",
+      "ROI measurement"
+    ],
+    "dashboardSetup": [
+      "Navigate to Expansion > Analytics",
+      "Set up metric tracking",
+      "Configure alert thresholds",
+      "Enable automated reporting"
+    ]
+  },
+  "fixing": {
+    "videoUrl": "https://thrivestack.io/tutorials/fixing-department-expansion",
+    "steps": [
+      "Track department usage; facilitate expansion."
+    ],
+    "automation": {
+      "code": "export const department-expansionAlert = {\n  trigger: 'department-expansion_detected',\n  threshold: 0.5,\n  actions: [\n    'analyze_impact',\n    'notify_customer_success',\n    'generate_fix_report'\n  ]\n};",
+      "explanation": "This automation monitors department expansion metrics and triggers appropriate actions when thresholds are exceeded."
+    }
+  },
+  "preventing": {
+    "videoUrl": "https://thrivestack.io/tutorials/preventing-department-expansion",
+    "strategy": [
+      "Implement continuous monitoring",
+      "Set up early warning system",
+      "Configure automated responses",
+      "Enable trend analysis"
+    ],
+    "bestPractices": [
+      "Regular audits",
+      "Performance tracking",
+      "Automated intervention",
+      "Weekly reviews"
+    ]
+  }
+}
